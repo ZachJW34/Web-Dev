@@ -1,7 +1,7 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/fullstack_template/static/node_modules
 
 # testing
 /coverage
@@ -10,7 +10,7 @@
 /build
 
 # env
-/pyEnv/*
+/fullstack_template/pyEnv
 
 # misc
 .DS_Store
