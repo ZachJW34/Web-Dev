@@ -10,16 +10,16 @@ class Hello extends React.Component {
 		this.getPythonHello = this.getPythonHello.bind(this);
 	}
 
-	personaliseGreeting(greeting){
-		this.setState({greeting: greeting + ' ' + this.props.name + '!'});
-	};
-
 	getPythonHello() {
 		$.get(window.location.href + 'hello', (data) => {
 			console.log(data);
 			this.personaliseGreeting(data);
 		});
 	}
+
+	personaliseGreeting(greeting){
+		this.setState({greeting: greeting + ' ' + this.props.name + '!'});
+	};
 
 	render () {
 		return (
